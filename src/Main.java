@@ -16,15 +16,29 @@ public class Main {
         ArrayList<Enrolment> enrolments = new ArrayList<>();
 
         // Creating enrolments
-        enrolments.add(new Enrolment(student1, course1, "2026-04-16"));
-        enrolments.add(new Enrolment(student2, course1, "2026-04-16"));
-        enrolments.add(new Enrolment(student3, course1, "2026-04-16"));
-        enrolments.add(new Enrolment(student1, course2, "2026-04-16"));
-        enrolments.add(new Enrolment(student2, course2, "2026-04-16"));
+        Enrolment enrolment1 = new Enrolment(student1, course1, "2026-04-16");
+        Enrolment enrolment2 = new Enrolment(student2, course1, "2026-04-16");
+        Enrolment enrolment3 = new Enrolment(student3, course1, "2026-04-16");
+        Enrolment enrolment4 = new Enrolment(student1, course2, "2026-04-16");
+        Enrolment enrolment5 = new Enrolment(student2, course2, "2026-04-16");
+
+        enrolments.add(enrolment1);
+        enrolments.add(enrolment2);
+        enrolments.add(enrolment3);
+        enrolments.add(enrolment4);
+        enrolments.add(enrolment5);
 
         System.out.println("==================================");
         System.out.println("      STUDENT ENROLMENT SYSTEM");
         System.out.println("==================================");
+
+        System.out.println("\nENROLMENT PROCESS");
+        System.out.println("----------------------------------");
+        enrolment1.displayEnrolmentMessage();
+        enrolment2.displayEnrolmentMessage();
+        enrolment3.displayEnrolmentMessage();
+        enrolment4.displayEnrolmentMessage();
+        enrolment5.displayEnrolmentMessage();
 
         // Display student information
         System.out.println("\nSTUDENT INFORMATION");

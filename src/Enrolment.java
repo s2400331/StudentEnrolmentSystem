@@ -57,6 +57,15 @@ public class Enrolment {
         System.out.println("Course: " + course.getCourseCode() + " - " + course.getCourseName());
         System.out.println("Enrolment Date: " + enrolmentDate);
         System.out.println("Status: " + status);
-        System.out.println("-----------------------------------");
+        System.out.println("----------------------------------");
+    }
+
+    // Method to display a short enrolment result message
+    public void displayEnrolmentMessage() {
+        if (status.equals("Enrolled")) {
+            System.out.println(student.getName() + " was enrolled in " + course.getCourseCode() + ".");
+        } else {
+            System.out.println(student.getName() + " could not be enrolled in " + course.getCourseCode() + " and was added to the waitlist.");
+        }
     }
 }
