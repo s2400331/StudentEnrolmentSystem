@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+// Class to store course details and manage enrolment capacity
 public class Course {
     // Private attributes
     private String courseCode;

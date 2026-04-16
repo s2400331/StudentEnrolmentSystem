@@ -1,3 +1,4 @@
+// Class to store student details
 public class Student {
     // Private attributes for encapsulation
     private String studentId;

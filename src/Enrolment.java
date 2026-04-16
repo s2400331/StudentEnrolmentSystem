@@ -1,3 +1,4 @@
+// Class to represent a student's enrolment in a course
 public class Enrolment {
     // Private attributes
     private Student student;

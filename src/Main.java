@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+// Main program to test the student enrolment system
 public class Main {
     public static void main(String[] args) {
         // Creating student objects
